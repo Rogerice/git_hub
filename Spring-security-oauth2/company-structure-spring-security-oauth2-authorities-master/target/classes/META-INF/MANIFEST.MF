@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: company-structure-spring-security-oauth2-authori
+ ties
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: rogerio.s.rodrigues
+Implementation-Vendor-Id: com.adamzareba
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/company-stru
+ cture-spring-security-oauth2-authorities/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

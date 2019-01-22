@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Somos.Api.Portal.Login
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: rogerio.s.rodrigues
+Implementation-Vendor-Id: br.com.somoseducacao.portal
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/springboot2-authserver
+Created-By: Maven Integration for Eclipse
+

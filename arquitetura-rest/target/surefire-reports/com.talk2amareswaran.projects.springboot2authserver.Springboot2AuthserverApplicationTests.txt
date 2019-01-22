@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.talk2amareswaran.projects.springboot2authserver.Springboot2AuthserverApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.232 s - in com.talk2amareswaran.projects.springboot2authserver.Springboot2AuthserverApplicationTests

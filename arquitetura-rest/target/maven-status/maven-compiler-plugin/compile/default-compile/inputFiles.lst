@@ -1,0 +1,11 @@
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\service\CustomUserDetailsService.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\Springboot2AuthserverApplication.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\config\CustomOauth2RequestFactory.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\entity\Permission.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\entity\BaseIdEntity.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\config\WebSecurityConfiguration.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\repository\UserRepository.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\config\CustomTokenEnhancer.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\entity\Role.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\entity\User.java
+C:\workspace\spring-boot2-oauth2-auth-server-jwt-mysql-master\src\main\java\com\talk2amareswaran\projects\springboot2authserver\config\OAuth2Configuration.java
