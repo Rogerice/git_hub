@@ -90,3 +90,101 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.jkiss.dbeaver.model 2 0 2019-01-28 09:06:37.302
 !MESSAGE Project 'arquitetura-rest' not found in registry
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:51.251
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-28 09:09:58.846
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.eclipse.lsp4e.operations.hover.LSBasedHover.getHoverInfo(LSBasedHover.java:168)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo(SpringBootJavaHoverProvider.java:35)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:173)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:58.905
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JaAkyeqx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:58.957
+!MESSAGE subscribing to classpath changes: sts4.classpath.JaAkyeqx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:58.963
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:58.966
+!MESSAGE subsribers = [sts4.classpath.JaAkyeqx]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:58.968
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:58.980
+!MESSAGE project arquitetura-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:59.000
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:59.011
+!MESSAGE Preparing classpath changed notification arquitetura-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:59.013
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JaAkyeqx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:59.015
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:59.039
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:59.049
+!MESSAGE executing callback sts4.classpath.JaAkyeqx arquitetura-rest false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:09:59.676
+!MESSAGE executing callback sts4.classpath.JaAkyeqx SUCCESS [done]
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2019-01-28 09:11:20.478
+!MESSAGE Project 'crud-rest-springboot' not found in registry
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:21.182
+!MESSAGE Preparing classpath changed notification crud-rest-springboot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:21.237
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:21.247
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:21.258
+!MESSAGE executing callback sts4.classpath.JaAkyeqx crud-rest-springboot false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:23.261
+!MESSAGE executing callback sts4.classpath.JaAkyeqx FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-28 09:11:23.267
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:27.170
+!MESSAGE Preparing classpath changed notification crud-rest-springboot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:27.215
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:27.225
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:27.240
+!MESSAGE executing callback sts4.classpath.JaAkyeqx crud-rest-springboot false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:27.375
+!MESSAGE executing callback sts4.classpath.JaAkyeqx SUCCESS [done]
