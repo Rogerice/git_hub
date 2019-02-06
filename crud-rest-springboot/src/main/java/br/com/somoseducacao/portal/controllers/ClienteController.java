@@ -26,7 +26,7 @@ import br.com.somoseducacao.portal.util.ResponsesErros;
 public class ClienteController {
 	
 	
-  
+
 
 	@Autowired
 	private ClienteService clienteService;
@@ -73,6 +73,8 @@ public class ClienteController {
 		public ResponseEntity<ResponsesErros<Integer>> remover(@PathVariable(name = "id") String id) {
 		this.clienteService.remover(id);
 		return ResponseEntity.ok(new ResponsesErros<Integer>(1));
+		
+		
 
 	}
 

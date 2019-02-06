@@ -188,3 +188,1037 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-28 09:11:27.375
 !MESSAGE executing callback sts4.classpath.JaAkyeqx SUCCESS [done]
+
+!ENTRY org.eclipse.ui 4 0 2019-01-28 15:05:00.830
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4594)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:349)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5148)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4797)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3999)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3555)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1474)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.tm4e.ui.internal.menus.ThemeContribution.getContributionItems(ThemeContribution.java:58)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:150)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:731)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:813)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1222)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:203)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 65 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:29:24.952
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:29:24.976
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:29:24.986
+!MESSAGE classpath=21 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:29:24.988
+!MESSAGE executing callback sts4.classpath.JaAkyeqx micro-service-wsdl false 21
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:29:26.996
+!MESSAGE executing callback sts4.classpath.JaAkyeqx FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-29 10:29:26.999
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:20.396
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:20.402
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:20.411
+!MESSAGE classpath=136 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:20.412
+!MESSAGE executing callback sts4.classpath.JaAkyeqx micro-service-wsdl false 136
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:22.417
+!MESSAGE executing callback sts4.classpath.JaAkyeqx FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-29 10:32:22.422
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:33.869
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:33.875
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:33.892
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:33.906
+!MESSAGE executing callback sts4.classpath.JaAkyeqx micro-service-wsdl false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:32:34.645
+!MESSAGE executing callback sts4.classpath.JaAkyeqx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:33:42.231
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:33:42.242
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:33:42.256
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:33:42.258
+!MESSAGE executing callback sts4.classpath.JaAkyeqx micro-service-wsdl false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 10:33:42.396
+!MESSAGE executing callback sts4.classpath.JaAkyeqx SUCCESS [done]
+!SESSION 2019-01-29 14:02:43.457 -----------------------------------------------
+eclipse.buildId=4.0.1.201810300749-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-29 14:02:55.016
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2019-01-29 14:03:08.229
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-29 14:03:08.229
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17e8caf2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@104cf647,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-29 14:03:08.229
+!MESSAGE A conflict occurred for CTRL+SHIFT+V:
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.command.OpenFromClipboard,Open from Clipboard,
+		Opens a Java element or a Java stack trace from clipboard,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7488c183,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.edit.paste.special,Advanced Paste,
+		Paste with extra settings,
+		Category(org.jkiss.dbeaver.core.util,Utility,Utility Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66779435,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-29 14:03:08.229
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37196d53,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.navigator.set.active,Set active,
+		Set object active ,
+		Category(org.jkiss.dbeaver.core.navigator,Database Navigator,Database Navigator Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40105b39,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-29 14:03:08.230
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+R:
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.gradle.ui.OpenTasksQuickLauncher,Open Gradle (STS) Tasks Quick Launcher,
+		Open Gradle tasks quick launcher dialog,
+		Category(org.springsource.ide.eclipse.gradle.ui.commands,Gradle (STS) Tools,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72a61e61,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.rollback,Rollback,
+		Rollback changes in current session,
+		Category(org.jkiss.dbeaver.core.database,Connection,Database Connection Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@282aea3c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,win32,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:25.742
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2019-01-29 14:03:28.149
+!MESSAGE Project 'arquitetura-rest' not found in registry
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2019-01-29 14:03:28.152
+!MESSAGE Project 'crud-rest-springboot' not found in registry
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2019-01-29 14:03:28.155
+!MESSAGE Project 'micro-service-wsdl' not found in registry
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-29 14:03:31.247
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\r.da.silva.rodrigues'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.511
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WvHQyICF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.538
+!MESSAGE subscribing to classpath changes: sts4.classpath.WvHQyICF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.576
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.588
+!MESSAGE subsribers = [sts4.classpath.WvHQyICF]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.611
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.617
+!MESSAGE project arquitetura-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.635
+!MESSAGE project crud-rest-springboot ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.639
+!MESSAGE project micro-service-wsdl ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.696
+!MESSAGE Preparing classpath changed notification arquitetura-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.700
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.703
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.705
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WvHQyICF => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.780
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:34.795
+!MESSAGE executing callback sts4.classpath.WvHQyICF arquitetura-rest false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:36.721
+!MESSAGE executing callback sts4.classpath.WvHQyICF SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:36.792
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:36.794
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:36.816
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:36.848
+!MESSAGE executing callback sts4.classpath.WvHQyICF micro-service-wsdl false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:38.862
+!MESSAGE executing callback sts4.classpath.WvHQyICF FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-29 14:03:38.868
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:39.000
+!MESSAGE Preparing classpath changed notification crud-rest-springboot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:39.011
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:39.032
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:39.034
+!MESSAGE executing callback sts4.classpath.WvHQyICF crud-rest-springboot false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-29 14:03:41.046
+!MESSAGE executing callback sts4.classpath.WvHQyICF FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-29 14:03:41.048
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-01-31 10:18:28.085 -----------------------------------------------
+eclipse.buildId=4.0.1.201810300749-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-31 11:15:16.429
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2019-01-31 11:15:30.982
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 11:15:30.982
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b0c38f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5cc152f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 11:15:30.982
+!MESSAGE A conflict occurred for CTRL+SHIFT+V:
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.command.OpenFromClipboard,Open from Clipboard,
+		Opens a Java element or a Java stack trace from clipboard,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@36f497b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.edit.paste.special,Advanced Paste,
+		Paste with extra settings,
+		Category(org.jkiss.dbeaver.core.util,Utility,Utility Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b86a656,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 11:15:30.982
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1117cc7c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.navigator.set.active,Set active,
+		Set object active ,
+		Category(org.jkiss.dbeaver.core.navigator,Database Navigator,Database Navigator Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4797023d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 11:15:30.982
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+R:
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.gradle.ui.OpenTasksQuickLauncher,Open Gradle (STS) Tasks Quick Launcher,
+		Open Gradle tasks quick launcher dialog,
+		Category(org.springsource.ide.eclipse.gradle.ui.commands,Gradle (STS) Tools,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@55cc4c61,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.rollback,Rollback,
+		Rollback changes in current session,
+		Category(org.jkiss.dbeaver.core.database,Connection,Database Connection Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b06f498,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,win32,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:48.643
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2019-01-31 11:15:50.055
+!MESSAGE Project 'arquitetura-rest' not found in registry
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2019-01-31 11:15:50.059
+!MESSAGE Project 'crud-rest-springboot' not found in registry
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2019-01-31 11:15:50.063
+!MESSAGE Project 'micro-service-wsdl' not found in registry
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-31 11:15:53.146
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\r.da.silva.rodrigues'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:57.979
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.duCKurGx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.049
+!MESSAGE subscribing to classpath changes: sts4.classpath.duCKurGx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.345
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.426
+!MESSAGE subsribers = [sts4.classpath.duCKurGx]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.471
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.483
+!MESSAGE project arquitetura-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.486
+!MESSAGE project crud-rest-springboot ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.530
+!MESSAGE project micro-service-wsdl ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.548
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.619
+!MESSAGE Preparing classpath changed notification arquitetura-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.631
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.641
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.duCKurGx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.668
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:15:58.685
+!MESSAGE executing callback sts4.classpath.duCKurGx arquitetura-rest false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:00.188
+!MESSAGE executing callback sts4.classpath.duCKurGx SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:00.273
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:00.369
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:00.396
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:00.441
+!MESSAGE executing callback sts4.classpath.duCKurGx micro-service-wsdl false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:02.461
+!MESSAGE executing callback sts4.classpath.duCKurGx FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-31 11:16:02.466
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:02.507
+!MESSAGE Preparing classpath changed notification crud-rest-springboot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:02.516
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:02.538
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:02.551
+!MESSAGE executing callback sts4.classpath.duCKurGx crud-rest-springboot false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 11:16:04.566
+!MESSAGE executing callback sts4.classpath.duCKurGx FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-31 11:16:04.570
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 15:58:47.108
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.duCKurGx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 15:58:47.111
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.duCKurGx
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 15:58:47.112
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 15:58:47.114
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.duCKurGx => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-01-31 16:01:01.025
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
+!SESSION 2019-01-31 17:57:41.407 -----------------------------------------------
+eclipse.buildId=4.0.1.201810300749-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2019-01-31 21:48:19.054
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 21:48:19.054
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17e8c38c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c4516ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 21:48:19.054
+!MESSAGE A conflict occurred for CTRL+SHIFT+V:
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.command.OpenFromClipboard,Open from Clipboard,
+		Opens a Java element or a Java stack trace from clipboard,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17ea3bc0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.edit.paste.special,Advanced Paste,
+		Paste with extra settings,
+		Category(org.jkiss.dbeaver.core.util,Utility,Utility Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d93e5bf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 21:48:19.054
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c36ab22,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.navigator.set.active,Set active,
+		Set object active ,
+		Category(org.jkiss.dbeaver.core.navigator,Database Navigator,Database Navigator Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68303c3e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-31 21:48:19.054
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+R:
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.gradle.ui.OpenTasksQuickLauncher,Open Gradle (STS) Tasks Quick Launcher,
+		Open Gradle tasks quick launcher dialog,
+		Category(org.springsource.ide.eclipse.gradle.ui.commands,Gradle (STS) Tools,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2ec23ec3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.rollback,Rollback,
+		Rollback changes in current session,
+		Category(org.jkiss.dbeaver.core.database,Connection,Database Connection Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c2e88b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,win32,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:40.388
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-31 21:48:45.249
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\r.da.silva.rodrigues'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.432
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.xowVVTYs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.438
+!MESSAGE subscribing to classpath changes: sts4.classpath.xowVVTYs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.442
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.445
+!MESSAGE subsribers = [sts4.classpath.xowVVTYs]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.448
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.456
+!MESSAGE project arquitetura-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.459
+!MESSAGE project crud-rest-springboot ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.481
+!MESSAGE Preparing classpath changed notification arquitetura-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.482
+!MESSAGE project micro-service-wsdl ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.485
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.487
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.490
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.xowVVTYs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.522
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:49.540
+!MESSAGE executing callback sts4.classpath.xowVVTYs arquitetura-rest false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:51.635
+!MESSAGE executing callback sts4.classpath.xowVVTYs FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-31 21:48:51.752
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:51.807
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:51.931
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:52.261
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:52.300
+!MESSAGE executing callback sts4.classpath.xowVVTYs micro-service-wsdl false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:54.374
+!MESSAGE executing callback sts4.classpath.xowVVTYs FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-31 21:48:54.389
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:54.422
+!MESSAGE Preparing classpath changed notification crud-rest-springboot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:54.435
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:54.461
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:54.463
+!MESSAGE executing callback sts4.classpath.xowVVTYs crud-rest-springboot false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-31 21:48:56.468
+!MESSAGE executing callback sts4.classpath.xowVVTYs FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-31 21:48:56.473
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-02 02:44:32.011
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xowVVTYs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-02 02:44:32.014
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.xowVVTYs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-02 02:44:32.016
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-02 02:44:32.018
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xowVVTYs => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-02-02 02:44:33.485
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
+!SESSION 2019-02-05 08:55:48.364 -----------------------------------------------
+eclipse.buildId=4.0.1.201810300749-RELEASE
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2019-02-05 08:56:18.504
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-05 08:56:18.504
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@70f76276,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e18876d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-05 08:56:18.504
+!MESSAGE A conflict occurred for CTRL+SHIFT+V:
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.command.OpenFromClipboard,Open from Clipboard,
+		Opens a Java element or a Java stack trace from clipboard,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17e8c38c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.edit.paste.special,Advanced Paste,
+		Paste with extra settings,
+		Category(org.jkiss.dbeaver.core.util,Utility,Utility Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c4516ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-05 08:56:18.504
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17ea3bc0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.navigator.set.active,Set active,
+		Set object active ,
+		Category(org.jkiss.dbeaver.core.navigator,Database Navigator,Database Navigator Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d93e5bf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-05 08:56:18.504
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+R:
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.springsource.ide.eclipse.gradle.ui.OpenTasksQuickLauncher,Open Gradle (STS) Tasks Quick Launcher,
+		Open Gradle tasks quick launcher dialog,
+		Category(org.springsource.ide.eclipse.gradle.ui.commands,Gradle (STS) Tools,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c36ab22,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+R,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.rollback,Rollback,
+		Rollback changes in current session,
+		Category(org.jkiss.dbeaver.core.database,Connection,Database Connection Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68303c3e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,win32,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:41.436
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-05 08:56:47.055
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\r.da.silva.rodrigues'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-02-05 08:56:52.115
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:301)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1582)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-02-05 08:56:52.206
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:563)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$8(LanguageServiceAccessor.java:372)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1553)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getMatchingStartedWrappers(LanguageServiceAccessor.java:374)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:284)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1582)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.478
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.mQFAizHw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.492
+!MESSAGE subscribing to classpath changes: sts4.classpath.mQFAizHw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.496
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.498
+!MESSAGE subsribers = [sts4.classpath.mQFAizHw]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.503
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.511
+!MESSAGE project crud-rest-springboot ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.515
+!MESSAGE project arquitetura-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.522
+!MESSAGE Preparing classpath changed notification crud-rest-springboot
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.529
+!MESSAGE project micro-service-wsdl ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.532
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.535
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.541
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.mQFAizHw => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.567
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:54.593
+!MESSAGE executing callback sts4.classpath.mQFAizHw crud-rest-springboot false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:56.595
+!MESSAGE executing callback sts4.classpath.mQFAizHw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:56.656
+!MESSAGE Preparing classpath changed notification micro-service-wsdl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:57.048
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:57.149
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:57.174
+!MESSAGE executing callback sts4.classpath.mQFAizHw micro-service-wsdl false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:59.229
+!MESSAGE executing callback sts4.classpath.mQFAizHw FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-02-05 08:56:59.233
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:59.262
+!MESSAGE Preparing classpath changed notification arquitetura-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:59.329
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:59.368
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:56:59.370
+!MESSAGE executing callback sts4.classpath.mQFAizHw arquitetura-rest false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 08:57:01.377
+!MESSAGE executing callback sts4.classpath.mQFAizHw FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-02-05 08:57:01.434
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 10:35:45.089
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mQFAizHw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 10:35:45.092
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.mQFAizHw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 10:35:45.094
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-02-05 10:35:45.096
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mQFAizHw => OK
