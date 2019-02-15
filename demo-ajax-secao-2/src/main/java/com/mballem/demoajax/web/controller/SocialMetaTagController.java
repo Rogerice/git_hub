@@ -25,6 +25,12 @@ public class SocialMetaTagController {
 /* então ? "if" */    ? ResponseEntity.ok(socialMetaTag)
 /* Se não : "else" */ : ResponseEntity.notFound().build();
 
+
+//Methodo ResponseEntity
+
+
+
+
 	}
 
 }
