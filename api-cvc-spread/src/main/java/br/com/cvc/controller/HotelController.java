@@ -13,7 +13,7 @@ import br.com.cvc.config.HotelConfig;
 @RequestMapping(value = "")
 public class HotelController {
 
-	//HotelConfig hotelList;
+	HotelConfig hotelList;
 	
 	//HotelConfig hotelConfig;
 	
